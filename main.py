@@ -28,7 +28,7 @@ def parser():
     meta_description = a.meta_description,
     meta_lang = a.meta_lang,
     meta_keywords = a.meta_keywords,
-    top_image = a.top_image.src,
+    top_image = a.top_image.src if a.top_image else "",
     publish_date = a.publish_date
     )
 
